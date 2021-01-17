@@ -33,7 +33,7 @@ int main()
     cadenas.push("entonces");
     cadenas.push("qué pasó");
     cadenas.push("con el ");
-    cadenas.push("programador");
+    cadenas.push("programador x");
     cout<<"Pila hecha en c++, esta es lo grande de la pila: "<<cadenas.len()<<endl;
 
     cadenas.pop();
