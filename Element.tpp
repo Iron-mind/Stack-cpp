@@ -14,6 +14,7 @@
 //*crear una escepción para element, si le piden el valor del siguiente, pero es un puntero nullo el siguiente
 //crear un operator '=' para asignar nuevo valor
 //lanzar escepcion cuando el siguiente es nullptr pero le pides metodo
+
 template<class TIPO>
 Element<TIPO>::Element(TIPO item,Element<TIPO> *next)
 {
@@ -51,3 +52,9 @@ Element<TIPO> *Element<TIPO>::pointerNext()
 {
   return next;
 }
+/**
+template<class TIPO>
+ Element<TIPO> operator=(TIPO value)
+{
+  this.Value=value;
+}**/

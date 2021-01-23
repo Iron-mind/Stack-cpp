@@ -2,7 +2,7 @@
   Archivo: Stack.tpp
   Autor: David T. Montoya
   <davidtovarmontoya@gmail.com>
-  Fecha creacion: 2020-11-20
+  start date: 2020-11-20
   Fecha ultima modificacion: 2020-11-20
   Version: 0.1
   Licencia: GPL
@@ -12,7 +12,8 @@
 // operator igual = para asignar pilas
 //documentar las funciones
 //operador paque se pueda imprimir la pila
-
+//arreglar documentacion
+//referencia con el .top ejem stack.top=20
 
 template<class TIPO>
 Stack<TIPO>::Stack()

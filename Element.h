@@ -47,6 +47,7 @@ class Element
     Element<TIPO> *pointerNext();
     TIPO pushTop();
     TIPO value();
+    /**operator= (TIPO value);**/
 };
 
 #include"Element.tpp"
