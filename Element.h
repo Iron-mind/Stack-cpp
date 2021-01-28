@@ -48,6 +48,8 @@ class Element
     TIPO pushTop();
     TIPO value();
     /**operator= (TIPO value);**/
+
+    void operator = (const TIPO &newValue);
 };
 
 #include"Element.tpp"

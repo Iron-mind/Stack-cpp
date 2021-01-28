@@ -14,6 +14,7 @@
 //operador paque se pueda imprimir la pila
 //arreglar documentacion
 //referencia con el .top ejem stack.top=20
+//cambiar el valor del top con operador por referencia
 
 template<class TIPO>
 Stack<TIPO>::Stack()

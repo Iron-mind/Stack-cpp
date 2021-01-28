@@ -12,7 +12,7 @@
 
 //PENDIENTES
 //*crear una escepción para element, si le piden el valor del siguiente, pero es un puntero nullo el siguiente
-//crear un operator '=' para asignar nuevo valor
+
 //lanzar escepcion cuando el siguiente es nullptr pero le pides metodo
 
 template<class TIPO>
@@ -31,6 +31,9 @@ Element<TIPO>::~Element()
 template<class TIPO>
 TIPO Element<TIPO>::valueNext()
 {
+
+    if(next==nullptr)
+        throw string(" you are calling '.valueNext' of last element. Next is nullptr, value not found");
    return next->value();
 }
 
@@ -51,6 +54,12 @@ template<class TIPO>
 Element<TIPO> *Element<TIPO>::pointerNext()
 {
   return next;
+}
+
+template<class TIPO>
+void Element<TIPO>:: operator = (const TIPO &newValue)
+{
+    Value=newValue;
 }
 /**
 template<class TIPO>
