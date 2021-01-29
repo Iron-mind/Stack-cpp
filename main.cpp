@@ -48,7 +48,6 @@ int main()
 //test operator
         tre= 30; //this should print
         two=20;
-       int jkjkj= one.valueNext();
 
         //double elements
         Element<double> treeDec(3.44, nullptr );
@@ -79,11 +78,19 @@ int main()
         testmethodI(five,"'five'");
         testmethodS(world4,"'world4'");
         testmethodS(world3,"'world3'");
+        //int jkjkj= one.valueNext(); report error
+        //int jkjkj= one.pointerNext()->value(); // never do this
+        //
+
+
+
+        //
+// TEST METHOD OF STACK ////////////////////////////////////////
 
         Stack<int> pila;
 
 
-        cout<< "prueba "<<"lenght de la pila: "<<  pila.len()<<endl;
+        cout<< "test "<<"lenght de la pila: "<<  pila.len()<<endl;
 
         Stack<string> cadenas;
         cadenas.push("entonces");

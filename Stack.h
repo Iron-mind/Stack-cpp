@@ -22,6 +22,7 @@ class Stack
   private:
     Element<TIPO> *Top;
     int length;
+    Element<TIPO> *last;
 
   public:
 //    Pila<TIPO> * operator [] (int indice);  // Sobrecarga de operadores (y no la vamos a ver)
@@ -42,6 +43,9 @@ class Stack
     TIPO pop();
 
     int len();
+
+
+    void  operator + (const Stack<TIPO> stackConcat);
 
     
 

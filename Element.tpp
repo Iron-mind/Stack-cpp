@@ -1,19 +1,14 @@
 /*
-  Archivo: Elemento.tpp
-  Autor: David T. Montoya
+  Archive: Element.tpp
+  Author: David T. Montoya
   <davidtovarmontoya@gmail.com>
-  Fecha creacion: 2020-11-20
-  Fecha ultima modificacion: 2020-11-20
+  Start date: 2020-11-20
+ Date last modified: 2021-1-29
   Version: 0.1
-  Licencia: GPL
+  Licence: GPL
 */
-//#include "Elemento.h"
 
 
-//PENDIENTES
-//*crear una escepción para element, si le piden el valor del siguiente, pero es un puntero nullo el siguiente
-
-//lanzar escepcion cuando el siguiente es nullptr pero le pides metodo
 
 template<class TIPO>
 Element<TIPO>::Element(TIPO item,Element<TIPO> *next)
@@ -31,7 +26,6 @@ Element<TIPO>::~Element()
 template<class TIPO>
 TIPO Element<TIPO>::valueNext()
 {
-
     if(next==nullptr)
         throw string(" you are calling '.valueNext' of last element. Next is nullptr, value not found");
    return next->value();
@@ -61,9 +55,3 @@ void Element<TIPO>:: operator = (const TIPO &newValue)
 {
     Value=newValue;
 }
-/**
-template<class TIPO>
- Element<TIPO> operator=(TIPO value)
-{
-  this.Value=value;
-}**/

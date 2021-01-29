@@ -1,11 +1,11 @@
 /*
-  Archivo: Pila.h
-  Autor: David T. Montoya
+  Archive: Element.h
+  Author: David T. Montoya
   <davidtovarmontoya@gmail.com>
-  Fecha creacion: 2020-11-20
-  Fecha ultima modificacion: 2020-11-20
+  Start date: 2020-11-20
+  Date last modified: 2021-1-29
   Version: 0.1
-  Licencia: GPL
+  Licence: GPL
 */
 #include<iostream>
 #include<string>
@@ -31,8 +31,7 @@ class Element
     /** Destructor. No hace nada
     */
     ~Element();
-    /** Hace una copia profunda, cediendo propiedad de la copia
-    */
+
 
     TIPO valueNext();
     /** Modificar el siguiente Elemento<TIPO>, para que apunte a otro

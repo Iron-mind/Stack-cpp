@@ -8,14 +8,15 @@
   Licencia: GPL
 */
 //PENDIENTES
-//penidiente crear un destructor para pila y elemento, también un operator suma & que todo esté en ingles
+// también un operator suma & que todo esté en ingles
 // operator igual = para asignar pilas
 //documentar las funciones
 //operador paque se pueda imprimir la pila
 //arreglar documentacion
 //referencia con el .top ejem stack.top=20
 //cambiar el valor del top con operador por referencia
-
+//operator ++ une las dos pero se sigue teniendo acceso a la otra por puntero
+//funcion .last retorna el last
 template<class TIPO>
 Stack<TIPO>::Stack()
 {
@@ -55,8 +56,13 @@ TIPO Stack<TIPO>::top()
 template<class TIPO>
 void Stack<TIPO>::push(TIPO item)
 {
+    Element<TIPO> *aux=new Element<TIPO>(item, Top);
+    if (Top==nullptr)
+    {
+        last=aux;
+    }
   length++;
-  Top=new Element<TIPO>(item, Top);
+  Top=aux;
 }
 
 
@@ -75,5 +81,29 @@ template<class TIPO>
 int Stack<TIPO>::len()
 {
   return length;
+}
+
+
+template<class TIPO>
+Stack<TIPO> concatenator(const Stack<TIPO> stackU)
+{
+
+
+}
+template<class TIPO>
+void Stack<TIPO>:: operator + (const Stack<TIPO> stackConcat)
+{
+    Stack<TIPO> stackAux;
+    if (Top == nullptr) {
+
+    }
+    else
+    {
+
+        TIPO *aux= pointer->pointerNext();
+        destructor(aux);
+        delete pointer;
+
+    }
 }
 
