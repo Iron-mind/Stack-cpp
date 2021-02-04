@@ -88,6 +88,9 @@ int main()
 // TEST METHOD OF STACK ////////////////////////////////////////
 
         Stack<int> pila;
+        Stack<int> pila2;
+        //Stack<int> pila3=pila+pila2;
+
 
 
         cout<< "test "<<"lenght de la pila: "<<  pila.len()<<endl;
@@ -102,8 +105,8 @@ int main()
         cadenas.pop();
 
         cout<<"Este es el top de la pila:  "<<"'"+cadenas.top()+"'"<<endl;
-        //no olvidar: valgrind --tool=memcheck --leak-check=full ./main
-        //para los memoryleaks
+//        //no olvidar: valgrind --tool=memcheck --leak-check=full ./main
+//        //para los memoryleaks
     }
     catch (string alert)
     {

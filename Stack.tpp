@@ -25,24 +25,25 @@ Stack<TIPO>::Stack()
 
 }
 template<class TIPO>
-void destructor(TIPO *pointer)
+void destructor(TIPO *pointer, int lenAux)
 {
-    if (pointer == nullptr) {
+    if (pointer == nullptr or lenAux==0) {
 
     }
     else
     {
-
+        lenAux--;
         TIPO *aux= pointer->pointerNext();
-        destructor(aux);
+        destructor(aux,lenAux);
         delete pointer;
 
     }
 }
 
 template<class TIPO>
-Stack<TIPO>::~Stack() {
-  destructor(Top);
+Stack<TIPO>::~Stack()
+{
+  destructor(Top,length);
 
 }
 
@@ -59,7 +60,7 @@ void Stack<TIPO>::push(TIPO item)
     Element<TIPO> *aux=new Element<TIPO>(item, Top);
     if (Top==nullptr)
     {
-        last=aux;
+        Last=aux;
     }
   length++;
   Top=aux;
@@ -85,25 +86,17 @@ int Stack<TIPO>::len()
 
 
 template<class TIPO>
-Stack<TIPO> concatenator(const Stack<TIPO> stackU)
-{
-
-
+Element<TIPO> *Stack<TIPO>::last() {
+    return Last;
 }
+
 template<class TIPO>
-void Stack<TIPO>:: operator + (const Stack<TIPO> stackConcat)
+Stack<TIPO> Stack<TIPO>:: operator + (const Stack<TIPO> stackConcat)
 {
-    Stack<TIPO> stackAux;
-    if (Top == nullptr) {
+    Stack<TIPO> stackAux2 = stackConcat;
+    Stack<TIPO> stackAux = *this;
+    return stackAux.last()->changeNext(stackAux2.Top);
 
-    }
-    else
-    {
 
-        TIPO *aux= pointer->pointerNext();
-        destructor(aux);
-        delete pointer;
-
-    }
 }
 

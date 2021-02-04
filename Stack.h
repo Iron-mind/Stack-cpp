@@ -20,11 +20,13 @@ template<class TIPO>
 class Stack
 {
   private:
-    Element<TIPO> *Top;
     int length;
-    Element<TIPO> *last;
+    Element<TIPO> *Last;
 
   public:
+    Element<TIPO> *Top;
+
+
 //    Pila<TIPO> * operator [] (int indice);  // Sobrecarga de operadores (y no la vamos a ver)
     /** Constructor, que crea un Pila<TIPO> con un valor concreto
         - Entrada: el valor string
@@ -43,9 +45,9 @@ class Stack
     TIPO pop();
 
     int len();
+    Element<TIPO> *last();
 
-
-    void  operator + (const Stack<TIPO> stackConcat);
+    Stack<TIPO>  operator + (const Stack<TIPO> stackConcat);
 
     
 
