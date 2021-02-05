@@ -21,7 +21,6 @@ class Stack
 {
   private:
     int length;
-    Element<TIPO> *Last;
 
   public:
     Element<TIPO> *Top;
@@ -45,9 +44,7 @@ class Stack
     TIPO pop();
 
     int len();
-    Element<TIPO> *last();
 
-    Stack<TIPO>  operator + (const Stack<TIPO> stackConcat);
 
     
 

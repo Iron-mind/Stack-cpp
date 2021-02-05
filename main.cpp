@@ -88,12 +88,16 @@ int main()
 // TEST METHOD OF STACK ////////////////////////////////////////
 
         Stack<int> pila;
+        pila.push(1);
+        pila.push(2);
         Stack<int> pila2;
-        //Stack<int> pila3=pila+pila2;
+        pila2.push(1);
+        pila2.push(2);
 
 
 
-        cout<< "test "<<"lenght de la pila: "<<  pila.len()<<endl;
+
+        cout<< "test "<<"lenght de la pila: "<< pila.len()<<endl;
 
         Stack<string> cadenas;
         cadenas.push("entonces");
