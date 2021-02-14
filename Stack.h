@@ -13,6 +13,7 @@
 #include "Element.h"
 #include<string>
 #include<iostream>
+#include <typeinfo>
 using namespace std;
 
 

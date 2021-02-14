@@ -10,6 +10,8 @@
 #include "Element.h"
 #include <iostream>
 #include "Stack.h"
+#include <typeinfo>
+
 using namespace std;
 void testmethod(Element<double>elem, string name)
 {
@@ -96,10 +98,13 @@ int main()
 
 
 
+        Stack<string> cadenas;
+        cadenas.push("entonces");
 
         cout<< "test "<<"lenght de la pila: "<< pila.len()<<endl;
+        cout<< "test "<<"la pila: "<< typeid(world4).name()<<endl;
+        cout<< "test "<<"la pila: "<< cadenas.printable()<<endl;
 
-        Stack<string> cadenas;
         cadenas.push("entonces");
         cadenas.push("qué pasó");
         cadenas.push("con el ");

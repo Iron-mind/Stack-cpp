@@ -70,6 +70,3 @@ int Stack<TIPO>::len()
   return length;
 }
 
-
-
-
