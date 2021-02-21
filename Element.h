@@ -23,21 +23,17 @@ class Element
     Element<TIPO> *next;
 
   public:
-//    Elemento<TIPO> * operator [] (int indice);  // Sobrecarga de operadores (y no la vamos a ver)
-    /** Constructor, que crea un Elemento<TIPO> con un valor concreto
-        - Entrada: el valor string
+    /** Constructor
     */
     Element(TIPO item, Element<TIPO> *next);
     /** Destructor. No hace nada
     */
     ~Element();
 
-
+    /** Return value of  linked Element<TIPO>,
+       */
     TIPO valueNext();
-    /** Modificar el siguiente Elemento<TIPO>, para que apunte a otro
-        - Entrada: el nuevo Elemento<TIPO>
-        - Salida: ninguna
-    */
+
     void changeNext(Element<TIPO> *replacer);
     /** Me dice cuanto vale un Elemento<TIPO>
         - Entrada: ninguna

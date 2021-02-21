@@ -1,42 +1,18 @@
 # Stack-cpp
-Stack in c++ template 
-stack in c++. see main.cpp
+Stack in c++ template c++. see main.cpp
 ### Recomendations
 >never use 'Element' class.
 
+##how to use?
+- Stack.tpp, Stack.h, Element.tpp Element.h are everything. Never separate, all in the same folder with _main.cpp_ (file where are you going to work)
 
-
-### To Do
-
-- Documentar funciones
-
-- pendientes de stack
-
-
-PENDIENTES
-también un operator suma & que todo esté en ingles
-
-
-operator igual = para asignar pilas
-
-
-documentar las funciones
-
-
-operador paque se pueda imprimir la pila
+- You Only have to import Stack.h like
+> ##### #include "Stack.h"
 
 
 
-arreglar documentacion
+#Documentación en español.
 
 
-referencia con el .top ejem stack.top=20
-
-
-cambiar el valor del top con operador por referencia
-
-
-operator ++ une las dos pero se sigue teniendo acceso a la otra por puntero
-funcion .last retorna el last
 
 

@@ -1,5 +1,5 @@
 /*
-  Archivo: main.tpp
+  Archivo: main.cpp
   Autor: David T. Montoya
   e-mail: <davidtovarmontoya@gmail.com>
   date start: 2020-11-20
@@ -80,11 +80,9 @@ int main()
         testmethodI(five,"'five'");
         testmethodS(world4,"'world4'");
         testmethodS(world3,"'world3'");
-        //int jkjkj= one.valueNext(); report error
-        //int jkjkj= one.pointerNext()->value(); // never do this
-        //
-
-
+//        int jkjkj= one.valueNext(); report error
+//        int jkjkj= one.pointerNext()->value(); // never do this
+//
 
         //
 // TEST METHOD OF STACK ////////////////////////////////////////
@@ -92,30 +90,36 @@ int main()
         Stack<int> pila;
         pila.push(1);
         pila.push(2);
-        Stack<int> pila2;
-        pila2.push(1);
-        pila2.push(2);
+        pila.pop();
+        cout<< "test "<<"lenght of pila stack: "<< pila.len()<<endl;
+        cout<<"This is top:  "<<"'"<<pila.top()<<"'"<<endl;
 
+        Stack<double> pila2;
+        pila2.push(1.2);
+        pila2.push(2.1);
+        pila2.pop();
 
+        cout<< "test "<<"lenght of stack pila2: "<< pila2.len()<<endl;
+        cout<<"This is top:  "<<"'"<<pila2.top()<<"'"<<endl;
+
+        Stack<bool> pila3;
+        pila3.push(true);
+        pila3.push(false);
+        pila3.pop();
+
+        cout<< "test "<<"lenght of stack pila3: "<< pila.len()<<endl;
+        cout<<"This is top:  "<<"'"<<pila3.top()<<"'"<<endl;
 
         Stack<string> cadenas;
         cadenas.push("entonces");
-
-        cout<< "test "<<"lenght de la pila: "<< pila.len()<<endl;
-        cout<< "test "<<"la pila: "<< typeid(world4).name()<<endl;
-        cout<< "test "<<"la pila: "<< cadenas.printable()<<endl;
-
         cadenas.push("entonces");
         cadenas.push("qué pasó");
         cadenas.push("con el ");
         cadenas.push("programador x");
-        cout<<"Pila hecha en c++, esta es lo grande de la pila: "<<cadenas.len()<<endl;
-
         cadenas.pop();
-
-        cout<<"Este es el top de la pila:  "<<"'"+cadenas.top()+"'"<<endl;
-//        //no olvidar: valgrind --tool=memcheck --leak-check=full ./main
-//        //para los memoryleaks
+        cout<< "test "<<"lenght of stack cadenas: "<< cadenas.len()<<endl;
+        cout<<"This is top:  "<<"'"+cadenas.top()+"'"<<endl;
+//
     }
     catch (string alert)
     {
@@ -123,9 +127,5 @@ int main()
     }
 
 
-
-    //comandos para compilar
-    // $ g++ main.cpp -o Pila
-    // $ ./Pila
     return 0;
 }
