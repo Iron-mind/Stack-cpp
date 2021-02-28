@@ -1,3 +1,4 @@
+
 # Stack-cpp
 Stack in c++ template c++. see main.cpp
 ### Recomendations
@@ -9,10 +10,24 @@ Stack in c++ template c++. see main.cpp
 - You Only have to import Stack.h like
 > ##### #include "Stack.h"
 
+## How to declare
+
+     Stack<typedate> nameWhatever; 
 
 
-#Documentación en español.
+## Methods
+ ### top
 
-
-
+    stackname.top();
+    return top of stack
+   
+### push
+    stackname.push(type item);
+    push item in stack
+### pop
+    stackname.pop();
+    remuves first element in stack and returns it
+### len
+    stackname.len();
+    return int, length stack
 

@@ -37,7 +37,7 @@ class Element
     void changeNext(Element<TIPO> *replacer);
     /** Me dice cuanto vale un Elemento<TIPO>
         - Entrada: ninguna
-        - Salida: el valor de ese elemento
+        - Salida: el valor de
     */
     Element<TIPO> *pointerNext();
     TIPO pushTop();
