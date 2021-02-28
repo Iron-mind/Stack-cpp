@@ -33,18 +33,20 @@ class Element
     /** Return value of  linked Element<TIPO>,
        */
     TIPO valueNext();
-
+/**    value next element (type of data that you declared)
+*/
     void changeNext(Element<TIPO> *replacer);
-    /** Me dice cuanto vale un Elemento<TIPO>
-        - Entrada: ninguna
-        - Salida: el valor de
+    /** replace pointer to next element
     */
     Element<TIPO> *pointerNext();
-    TIPO pushTop();
+/**    return pointer to next element (type of data that you declared)
+*/
+
     TIPO value();
-    /**operator= (TIPO value);**/
+    /** return Value (type of data that you declared)**/
 
     void operator = (const TIPO &newValue);
+    /** replaces value. now is newValue (type of data that you declared) */
 };
 
 #include"Element.tpp"
