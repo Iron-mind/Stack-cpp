@@ -2,7 +2,7 @@
 # Stack-cpp
 Stack in c++ template c++. see main.cpp
 ### Recomendations
->never use 'Element' class.
+>never use 'Element' class. When I write 'element' or 'item' in comments I am refering to the same... that is, piece a information (type int, string, class, etc.)
 
 ## how to use
 - Stack.tpp, Stack.h, Element.tpp Element.h are everything. Never separate, all in the same folder with _main.cpp_ (file where are you going to work)
