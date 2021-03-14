@@ -3,9 +3,9 @@
   Autor: David T. Montoya
   e-mail: <davidtovarmontoya@gmail.com>
   date start: 2020-11-20
-  Fdate last mod: 2020-11-20
+  date last mod: 2021-3-11
   Version: 0.2
-  Licencia: GPL
+  licence: GPL
 */
 #include "Element.h"
 #include <iostream>

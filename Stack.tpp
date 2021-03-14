@@ -3,9 +3,9 @@
   Autor: David T. Montoya
   <davidtovarmontoya@gmail.com>
   start date: 2020-11-20
-  Fecha ultima modificacion: 2020-11-20
+  last date modified 2021-3-13
   Version: 0.1
-  Licencia: GPL
+ licence: GPL
 */
 template<class TIPO>
 Stack<TIPO>::Stack()

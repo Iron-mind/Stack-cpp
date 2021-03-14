@@ -2,10 +2,10 @@
   Archivo: Pila.h
   Autor: Davi T. Montoya
   <davidtovarmontoya@gmail.com>
-  Fecha creacion: 2020-11-20
-  Fecha Ãºltima modificacion: 2020-11-20
-  VersiÃ³n: 0.1
-  Licencia: GPL
+  start date: 2020-11-20
+  last date modified 2021-3-13
+  Version: 0.1
+  licence: GPL
 
 */
 #ifndef STACK_H
@@ -22,34 +22,24 @@ class Stack
 {
   private:
     int length;
-
-  public:
     Element<TIPO> *Top;
 
 
-//    Pila<TIPO> * operator [] (int indice);  // Sobrecarga de operadores (y no la vamos a ver)
-    /** Constructor, que crea un Pila<TIPO> con un valor concreto
-        - Entrada: el valor string
-    */
+public:
     Stack();
-    /** Destructor. No hace nada
-    */
     ~Stack();
-    
-    
+    /* return top element */
     TIPO top();
-   
-    
+
+    /*insert element in the top, does not delete something*/
     void push(TIPO item);
 
+    /*delete top element and return it*/
     TIPO pop();
 
+    /*return size of the stack*/
     int len();
 
-
-    
-
-    
    
 };
 

@@ -2,10 +2,10 @@
   Archive: Element.h
   Author: David T. Montoya
   <davidtovarmontoya@gmail.com>
-  Start date: 2020-11-20
-  Date last modified: 2021-1-29
+  start date: 2020-11-20
+  last date modified 2021-3-13
   Version: 0.1
-  Licence: GPL
+  licence: GPL
 */
 #include<iostream>
 #include<string>
