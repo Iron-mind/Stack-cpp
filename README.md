@@ -16,18 +16,19 @@ Stack in c++ template c++. see main.cpp
 
 
 ## Methods
- ### top
+ ### .top
 
     stackname.top();
     return top of stack
    
-### push
+### .push
     stackname.push(type item);
     push item in stack
-### pop
+### .pop
     stackname.pop();
     remuves first element in stack and returns it
-### len
+### .len
     stackname.len();
     return int, length stack
-
+## Test
+Compile main.cpp to see the tests or execute Main
