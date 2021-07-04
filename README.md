@@ -26,7 +26,7 @@ Stack in c++ template c++. See the main.cpp file.
     push item in stack
 ### .pop
     stackname.pop();
-    remuves first element in stack and returns it
+    removes first element in stack and returns it
 ### .len
     stackname.len();
     return int, length stack
