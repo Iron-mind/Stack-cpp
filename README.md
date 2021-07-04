@@ -1,6 +1,6 @@
 
 # Stack-cpp
-Stack in c++ template c++. see main.cpp
+Stack in c++ template c++. See the main.cpp file.
 ### Recomendations
 >never use 'Element' class. When I write 'element' or 'item' in comments I am refering to the same... that is, piece a information (type int, string, class, etc.)
 
